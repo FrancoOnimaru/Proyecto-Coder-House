@@ -1,0 +1,270 @@
+/*VARIABLES DE COLORES CON SASS*/
+$rosa: #FAACA8;
+$violeta: #DDD6F3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*::after,
+  *::before {
+    box-sizing: border-box;
+  }*/
+        /*header{
+          display: flex; 
+          flex-direction: row; 
+          justify-content: center; 
+          text-transform: uppercase;
+          margin-bottom: 100px;
+        }*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        /*MENU DE NAVEGACION*/
+  
+  
+  
+  
+       /* nav ul {
+          display: flex; 
+          flex-direction: row;
+          text-decoration: none; 
+          list-style-type: none;  
+         
+        }*/
+        nav{
+          height: 60px;
+        }
+        .bg-menu{
+        background-image: linear-gradient(270deg, $rosa 0%, $violeta 100%);
+  
+        }
+  
+        nav li {
+          margin: 10px; 
+          padding: 5px; 
+          text-transform: uppercase;
+  
+        }
+        
+        nav li a{
+          font-size: 15px;
+          text-decoration: none;
+          color: inherit;
+        }
+        nav li:hover {
+            border-bottom: 1px white solid;
+          border-top: 1px white solid;}
+  
+            /*CAROUSEL*/
+          .carousel-img{
+            object-fit: cover;
+            width: 100%;
+            height: 550px;
+          }
+  
+          .carousel-text{
+            text-align: center;
+            color:palevioletred ;
+          background-image: linear-gradient(90deg, #DDD6F3 0%, #FAACA8 100%);
+  
+          
+  
+  
+          }
+  
+          /*SECCION PRODUCTOS*/
+          .productos-section{
+           
+            margin-top: 40px;
+          }
+          .productos-title{
+            text-align: center;
+            border-bottom: 2px solid #FAACA8;
+            
+          }
+  
+          .producto1{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+  
+          .producto1 img{
+            border-radius: 5%;
+            width: 500px;
+            height: auto;
+          }
+  
+          .producto1-text{
+            width: 55%;
+            height: 100px;
+            text-align: center;
+          }
+  
+  
+    
+          .producto2{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 60px;
+          }
+  
+          .producto2-text{
+            width: 55%;
+            height: 100px;
+            text-align: center;
+            
+          }
+  
+          .producto2-img img{
+            border-radius: 5%;
+            width: 500px;
+            height: auto;
+          }
+  
+          
+  
+          /*SERVICIOS*/
+          .services__section{
+            margin-top: 90px;
+          }
+  
+          .services__title{
+            text-align: center;
+            border-bottom: 2px solid #DDD6F3;
+          }
+  
+          .services__img{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+          }
+  
+          .services__img a img{
+            width: 90%;
+            height: 500px;
+            border-radius: 70%;
+          }
+  
+          .services__text{
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+          }
+  
+          .services__img img:hover{
+            border: 2px solid #FAACA8 ;
+          }
+  
+          .services__precios{
+            margin-top: 80px;
+            text-align: center;
+          }
+          .services__table{
+            margin-top: 30px;
+          }
+  
+  
+          /*RECOMENDACIONES*/
+          .recomendaciones-section{
+            margin-top: 50px;
+            margin-bottom: 70px;
+          }
+          .recomendaciones-section h2, p{
+            text-align: center;
+          }
+  
+          .recomendaciones-section p{
+            font-size: 20px;
+          }
+  
+          .recomendaciones-section h2{
+            border-bottom: 2px solid #DDD6F3;
+          }
+  
+          .cards-recomendaciones{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-evenly;
+          }
+  
+          .card-animate1{
+            transition: 2s;
+          }
+  
+          .card-animate1:hover{
+            transform: scale(1.1, 1.2);
+          }
+  
+  
+    
+  
+          /*CONTACTANOS*/
+  
+          .contactanos-section{
+            margin-top: 40px;
+            margin-bottom: 70px;
+          }
+  
+          .contactanos-title{
+            text-align: center;
+            border-bottom: 2px solid #FAACA8;
+          }
+  
+      
+          @media only screen and (max-width: 991px){
+  
+            /*PRODUCTOS*/
+            .producto1{
+              margin-top: 40px;
+              display: flex;
+              flex-direction: column;
+            }
+  
+            .producto2{
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 90px;
+            margin-bottom: 90px;
+          }
+  
+          .producto2-text{
+            width: 55%;
+            height: 100px;
+            text-align: center;
+            
+          }
+  
+          .producto2-img img{
+            border-radius: 5%;
+            width: 500px;
+            height: auto;
+          }
+  
+          /*SERVICIOS*/
+          .services-img{
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+          }
+  
+          
+  
+          
+  
+  
+          
+  
+          }
