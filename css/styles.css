@@ -1,28 +1,9 @@
-/*VARIABLES DE COLORES CON SASS*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
-/*::after,
-  *::before {
-    box-sizing: border-box;
-  }*/
-/*header{
-          display: flex; 
-          flex-direction: row; 
-          justify-content: center; 
-          text-transform: uppercase;
-          margin-bottom: 100px;
-        }*/
-/*MENU DE NAVEGACION*/
-/* nav ul {
-          display: flex; 
-          flex-direction: row;
-          text-decoration: none; 
-          list-style-type: none;  
-         
-        }*/
 nav {
   height: 60px; }
 
@@ -44,11 +25,15 @@ nav li:hover {
   border-top: 1px white solid; }
 
 /*CAROUSEL*/
+.carousel-slide {
+  max-height: 990px;
+}
+
 .carousel-img {
   object-fit:fill;
   text-align: center;
   width: 100%;
-  height: 550px; 
+  height: 750px; 
 }
 
 .carousel-text {
@@ -169,6 +154,13 @@ nav li:hover {
 
 .card-animate1:hover {
   transform: scale(1.1, 1.2); }
+
+.card-img-top{
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  width: 100%;
+  height: 286px;
+}
 
 /*CONTACTANOS*/
 .contactanos-section {
